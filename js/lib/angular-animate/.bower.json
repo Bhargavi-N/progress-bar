@@ -1,0 +1,17 @@
+{
+  "name": "angular-animate",
+  "main": "./angular-animate.js",
+  "dependencies": {
+    "angular": "1.2.24-build.408+sha.d7548fd"
+  },
+  "homepage": "https://github.com/angular/bower-angular-animate",
+  "_release": "065e27fd88",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "065e27fd88a159fee48d0748f7bc577c315319e2"
+  },
+  "_source": "https://github.com/angular/bower-angular-animate.git",
+  "_target": "master",
+  "_originalSource": "angular-animate"
+}

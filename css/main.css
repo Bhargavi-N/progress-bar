@@ -1,0 +1,129 @@
+.center-block {
+  float: none; }
+
+.action-btn {
+    cursor: pointer;
+}
+
+.beta {
+	width: 61px;
+}
+
+.main-content {
+	min-height: 500px;
+}
+
+.fade-label {
+  position: absolute;
+  z-index: 1;
+  animation:error-message-label 0.5s 1;
+  -webkit-animation:error-message-label 0.5s 1;
+  animation-fill-mode: forwards;
+
+  animation-delay:2s;
+  -webkit-animation-delay:1s; /* Safari and Chrome */
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes error-message-label{
+    from {opacity :1;}
+    to {opacity :0;}
+}
+
+@-webkit-keyframes error-message-label{
+    from {opacity :1;}
+    to {opacity :0;}
+}
+
+.white-color {
+  color: #FFF !important;
+}
+
+.something {
+  height: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+}
+
+.loading-app {
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.loader {
+  background-color: #000;
+  opacity: 0.7;
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  background-color: #FFF;
+  margin: 200px auto;
+  -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+  animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  } 50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  } 100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+/*
+ textAngular styles starts here
+ */
+
+.ta-editor {
+  min-height: 100px !important;
+}
+/*.ta-toolbar {
+  display: none;
+}
+.ta-toolbar.focussed {
+  display: block;
+}*/
+.ta-scroll-window > .ta-bind {
+  min-height: 100px !important;
+}
+/*
+ textAngular styles ends here
+ */
+
+
+.error_message {
+  color: red;
+  font-weight: bold;
+}
+.backgroundLightgrey{background:#F2F2F2}
+.options-btn {
+  margin: 0 25px;
+  display: inline-block;
+}
+/*header styling*/
+h3.colorClass{color: #37bc9b; text-align: center; font-family: 'Trocchi', serif; font-size: 30px; font-weight: 600; line-height: 48px; margin: 0 ;}
+h1 {color: #226b1b; font-family: 'Trocchi', serif; font-style: italic; font-size: 27px; font-weight: normal; line-height: 48px; margin: 0;}
+/*button styling*/
+.btn-upload{background-color: #6dc066; border-color:#6dc066}
+.btn-clear{background-color: #48cfad; border-color:#48cfad}

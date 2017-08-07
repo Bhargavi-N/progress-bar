@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html data-ng-controller="applicationCtrl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Flicker image search</title>
+    <link type="text/css" href="js/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header data-ng-include="'templates/includes/header.html'"></header>
+      <div ui-view class="container main-content">
+        <div class="loading-app">Loading application...</div>
+      </div>
+      <footer data-ng-include="'templates/includes/footer.html'"></footer>
+      <div data-ng-include="'templates/includes/loader.html'"></div>
+    </div>
+    <script src="js/lib/requirejs/require.js" data-main="js/main.js"></script>
+  </body>
+</html>

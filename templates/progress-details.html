@@ -1,0 +1,37 @@
+<div ui-view="" class="container main-content ng-scope" data-ng-init="init()">
+    <div class="container-fluid ng-scope" style="margin-top: 50px;">
+      <h3 class="colorClass">Progress bar example</h3><br> 
+      <div class="row" ng-repeat="progressValue in bars">  
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="{{progressValue}}"
+            aria-valuemin="0" aria-valuemax="100" ng-style="{'width':progressValue}">
+            <span class="sr-only">{{progressValue}} Complete</span>
+            </div>
+        </div>
+      </div>
+
+      <div class="row center-block" > 
+        <div class="col-sm-3">
+          <div class="dropdown options-btn">   
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle dropdown-toggle-org" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                Progress 1
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-org " role="menu" aria-labelledby="dropdownMenu1" required >
+                <li role="presentation" ng-repeat="progressValue in bars">
+                  <a role="menuitem" tabindex="-1" href="#" onclick="return false;"  ng-click="OnPogressSelectClick($index)" > Progress {{$index+1}}</a>
+                </li>
+              </ul>
+            </div>    
+          </div>
+        </div>
+        <div class="col-sm-1" ng-repeat="buttonValue in buttons">
+            <button type="button" class="btn btn-primary" ng-click="OnProgressButtonClick(buttonValue)">{{buttonValue}}</button>
+        </div>
+      </div>   
+    </div>
+
+    </div>
+    <br>
+</div>
